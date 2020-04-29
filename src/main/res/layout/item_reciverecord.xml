@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintWidth_max="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/reciverecorditem_imageview_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cat1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reciverecorditem_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="고양이"
+        app:layout_constraintLeft_toRightOf="@+id/reciverecorditem_imageview_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_marginLeft="6dp"
+        android:id="@+id/reciverecorditem_linearlayout"
+        android:padding="12dp"
+        android:background="@drawable/yellow_round_button"
+        android:backgroundTint="@color/colorGray"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/reciverecorditem_textview_name"
+        app:layout_constraintLeft_toRightOf="@+id/reciverecorditem_imageview_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/reciverecorditem_imageview_message"
+            android:src="@drawable/icon_play"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="음성 메시지"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reciverecorditem_textview_messagetime"
+        android:layout_marginLeft="3dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="메시지 시간"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toRightOf="@+id/reciverecorditem_linearlayout"
+        />
+
+
+    <TextView
+        android:id="@+id/reciverecorditem_textview_unreadcount"
+        android:layout_marginLeft="3dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="1"
+        android:textColor="@color/colorDarkGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toRightOf="@+id/reciverecorditem_textview_messagetime"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

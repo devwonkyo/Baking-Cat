@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/cat1"
+        android:id="@+id/profileactivity_imageview_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/profileactivity_textview_postnum"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_imageview_profile"
+        app:layout_constraintRight_toLeftOf="@+id/profileactivity_textview_followernum"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/profileactivity_textview_followernum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_textview_postnum"
+        app:layout_constraintRight_toLeftOf="@+id/profileactivity_textview_folloingnum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/profileactivity_textview_folloingnum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_textview_followernum"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileactivity_textview_post"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_postnum"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_imageview_profile"
+        app:layout_constraintRight_toLeftOf="@+id/profileactivity_textview_follower"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="게시물"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/profileactivity_textview_follower"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_followernum"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_textview_post"
+        app:layout_constraintRight_toLeftOf="@+id/profileactivity_textview_following"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="팔로워"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/profileactivity_textview_following"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="팔로잉"
+        android:textSize="16dp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_textview_follower"
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_folloingnum" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_post"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_imageview_profile"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="프로필 편집"
+        android:textColor="#ffffff"
+        android:background="@drawable/gray_round_button"
+        android:id="@+id/profileactivity_button_modifyprofile"
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_post"
+        app:layout_constraintLeft_toRightOf="@+id/profileactivity_imageview_profile"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="5dp"
+
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="1:1 대화"
+        android:textColor="#ffffff"
+        android:background="@drawable/gray_round_button"
+        android:id="@+id/profileactivity_button_chat"
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:text="고양이"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_imageview_profile"
+        android:id="@+id/profileactivity_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_name"
+        android:background="@color/colorDarkGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profileactivity_recyclerview"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/profileactivity_textview_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/profileactivity_textview_noposts"
+        android:visibility="invisible"
+        android:text="등록된 게시물이 없습니다."
+        android:textColor="@color/colorGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

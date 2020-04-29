@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/itemlikepeople_imageview_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/itemlikepeople_textview_me"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/gray_round_button"
+        android:text="나"
+        app:layout_constraintCircle="@id/itemlikepeople_imageview_profile"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/itemlikepeople_imageview_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/itemlikepeople_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="이름"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

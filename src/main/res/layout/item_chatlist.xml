@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/itemchatlist_imageview_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text=""
+        android:textColor="@color/colorGray"
+        android:textSize="14dp"
+        android:id="@+id/itemchatlist_textview_peoplenum"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/itemchatlist_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintWidth_max="240dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text=""
+        android:id="@+id/itemchatlist_textview_name"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@+id/itemchatlist_imageview_profile"
+        app:layout_constraintRight_toLeftOf="@+id/itemchatlist_textview_peoplenum"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:maxLines="1"
+        app:layout_constrainedWidth="true"
+        android:id="@+id/itemchatlist_textview_lastmessage"
+        app:layout_constraintStart_toEndOf="@+id/itemchatlist_imageview_profile"
+        app:layout_constraintTop_toBottomOf="@+id/itemchatlist_textview_name"
+        app:layout_constraintWidth_max="300dp"
+        android:ellipsize="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/itemchatlist_textview_lastmessagetime"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:backgroundTint="#ff0000"
+        android:background="@drawable/yellow_round_button"
+        android:text="3"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemchatlist_textview_lastmessagetime"
+        android:id="@+id/itemchatlist_textview_unreadcount"
+        android:layout_width="20dp"
+        android:layout_height="22dp" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

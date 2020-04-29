@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:maxWidth="300dp"
+        android:id="@+id/itemsendmessage_textview_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:padding="10dp"
+        android:text="1111111111111"
+        android:textColor="#ffffff"
+        app:angle="8dp"
+        app:arrowCenter="false"
+        app:arrowHeight="10dp"
+        app:arrowLocation="right"
+        app:arrowPosition="6dp"
+        app:arrowWidth="8dp"
+        app:bubbleColor="@color/colorDarkGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/itemsendmessage_textview_messagetime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="메시지 시간"
+        android:textSize="13dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemsendmessage_textview_message"
+        />
+
+    <TextView
+        android:id="@+id/itemsendmessage_textview_unreadcount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="13dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemsendmessage_textview_messagetime"
+        />
+</android.support.constraint.ConstraintLayout>

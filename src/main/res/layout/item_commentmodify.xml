@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="550dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/commentmodify_textview_modify"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="댓글 수정"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/commentmodify_textview_modify"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/commentmodify_imageview_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/commentmodify_textview_modify"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:id="@+id/commentmodify_edittext_comment"
+        app:layout_constraintLeft_toRightOf="@+id/commentmodify_imageview_profile"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/commentmodify_button_update"
+        android:textColor="#ffffff"
+        android:background="@drawable/yellow_round_button"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/commentmodify_edittext_comment"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="업데이트"
+        android:layout_width="70dp"
+        android:layout_height="45dp" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/commentmodify_button_cancel"
+        android:textColor="#ffffff"
+        android:background="@drawable/yellow_round_button"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/commentmodify_edittext_comment"
+        app:layout_constraintRight_toLeftOf="@+id/commentmodify_button_update"
+        android:text="취소"
+        android:layout_width="70dp"
+        android:layout_height="45dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_friendlist"
+        android:checked="true"
+        android:iconTint="@color/colorText"
+        android:title="팔로잉"
+        android:icon="@drawable/icon_group"></item>
+
+    <item
+        android:id="@+id/action_friendplus"
+        android:iconTint="@color/colorText"
+        android:title="팔로우요청"
+        android:icon="@drawable/ic_action_name"></item>
+</menu>
