@@ -56,3 +56,18 @@ Java 사용 Android SNS Application
 > ▲▲▲ 팔로잉 , 팔로우요청 수락, 거절
 
 
+
+## 데이터베이스 구조(RealTime FireBase)
+![최상위](./app_image/data_top.png)
+> ▲▲▲ 최상위 데이터베이스
+
+![유저](./app_image/data_user.png)
+> ▲▲▲ 유저관리 데이터베이스
+
+![게시물](./app_image/data_post.png)
+> ▲▲▲ 게시물 데이터베이스
+
+![채팅방](./app_image/data_chat.png)
+> ▲▲▲ 채팅방 데이터베이스
+
+
